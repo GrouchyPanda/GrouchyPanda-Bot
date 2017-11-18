@@ -1,13 +1,17 @@
-var MongoClient = require('mongodb').MongoClient
-  , assert = require('assert');
+const Discord = require("discord.js");
+const client = new Discord.Client();
+const config = require("./config.json");
 
-// Connection URL
-var url = 'mongodb://localhost:27017/myproject';
-
-// Use connect method to connect to the server
-MongoClient.connect(url, function(err, db) {
-  assert.equal(null, err);
-  console.log("Connected successfully to server");
-
-  db.close();
+client.on("ready", () => {
+  console.log("I am ready!");
 });
+
+client.on("message", (message) => {
+	if(!msg.content.startsWith(prefix) || message.author.bot) return;
+	
+    if (message.content.startsWith("ping")) {
+        message.channel.send("pong!");
+    }
+});
+
+client.login(config.token);
