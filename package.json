@@ -2,7 +2,7 @@
   "name": "grouchypanda-bot",
   "version": "1.0.0",
   "description": "Personal discord bot",
-  "main": "app.js",
+  "main": "./src/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/GrouchyPanda/GrouchyPanda-Bot#readme",
   "dependencies": {
+    "discord.js": "^11.2.1",
     "mongodb": "^2.2.33"
   }
 }
