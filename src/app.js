@@ -20,7 +20,7 @@ client.on("message", (message) => {
 			message.channel.send("pong!");
 			break;
 		case "hello":
-			message.send("Hello " + ${message.author});
+			message.send("Hello " + message.author);
 			break;
 		case "help":
 			message.send("Pshh, " + message.author + " out here needing help like a dummy...");
