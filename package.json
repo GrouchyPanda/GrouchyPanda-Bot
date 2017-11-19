@@ -2,8 +2,9 @@
   "name": "grouchypanda-bot",
   "version": "1.0.0",
   "description": "Personal discord bot",
-  "main": "./src/app.js",
+  "main": "app.js",
   "scripts": {
+    "start": "node ./src/app.js"
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
